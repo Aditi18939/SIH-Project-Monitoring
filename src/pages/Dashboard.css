@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #123c69;
+  color: white;
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  opacity: 0.8;
+}
+
+.logout {
+  background: white;
+  color: #123c69;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Welcome */
+.welcome {
+  padding: 25px 40px 10px;
+}
+
+.welcome h2 {
+  margin-bottom: 5px;
+}
+
+.welcome p {
+  color: #666;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #666;
+  margin-top: 0;
+}
+
+.card strong {
+  font-size: 32px;
+  color: #123c69;
+}
+
+/* Projects */
+.projects {
+  margin: 20px 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-row h3 {
+  margin: 0 0 6px;
+}
+
+.project-row p {
+  margin: 0;
+  color: #777;
+}
+
+.status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ontrack {
+  background: #d9f7e5;
+  color: #16834b;
+}
+
+.delayed {
+  background: #fff0d5;
+  color: #b56a00;
+}
+
+.risk {
+  background: #ffe0e0;
+  color: #c62828;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .welcome,
+  .stats,
+  .projects {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

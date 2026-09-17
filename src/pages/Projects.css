@@ -1,0 +1,124 @@
+.projects-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.projects-header {
+  background: #123c69;
+  color: white;
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.projects-header p {
+  margin: 6px 0 0;
+  opacity: 0.8;
+}
+
+.projects-header button {
+  background: white;
+  color: #123c69;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.projects-content {
+  padding: 30px 40px;
+}
+
+.projects-content h2 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.project-info h3 {
+  margin: 0 0 8px;
+}
+
+.project-info p {
+  margin: 0;
+  color: #777;
+}
+
+.progress-section span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+.project-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.on-track {
+  background: #d9f7e5;
+  color: #16834b;
+}
+
+.delayed {
+  background: #fff0d5;
+  color: #b56a00;
+}
+
+.at-risk {
+  background: #ffe0e0;
+  color: #c62828;
+}
+
+@media (max-width: 800px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-content {
+    padding: 20px;
+  }
+}
