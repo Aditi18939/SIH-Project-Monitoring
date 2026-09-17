@@ -8,7 +8,7 @@ function MilestoneTracking({ project, onBack }) {
   useEffect(() => {
     if (!project?._id) return;
 
-    fetch(`http://localhost:5000/api/milestones/${project._id}`)
+    fetch(`https://sih-project-monitoring.onrender.com/api/milestones/${project._id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("MILESTONE DATA:", data);

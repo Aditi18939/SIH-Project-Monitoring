@@ -7,7 +7,7 @@ function SmartAlerts({ project, onBack }) {
   useEffect(() => {
     if (!project?._id) return;
 
-    fetch(`http://localhost:5000/api/alerts/${project._id}`)
+    fetch(`https://sih-project-monitoring.onrender.com/api/alerts/${project._id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("ALERT DATA:", data);

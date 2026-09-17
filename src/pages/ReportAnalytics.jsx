@@ -7,7 +7,7 @@ function ReportsAnalytics({ project, onBack }) {
   useEffect(() => {
     if (!project?._id) return;
 
-    fetch(`http://localhost:5000/api/reports/${project._id}`)
+    fetch(`https://sih-project-monitoring.onrender.com/api/reports/${project._id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("REPORT DATA:", data);

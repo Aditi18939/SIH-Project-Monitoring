@@ -6,7 +6,7 @@ function Projects({ onBack, onProjectClick }) {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
+    fetch("https://sih-project-monitoring.onrender.com/api/projects")
       .then((response) => response.json())
       .then((data) => {
         console.log("PROJECT DATA:", data);
